@@ -1,0 +1,13 @@
+#!/bin/bash
+# Script para automatizar git add, commit, merge e push
+
+if [ -z "$1" ]; then
+  echo "Uso: ./gls \"mensagem do commit\""
+  exit 1
+fi
+
+git add .
+git commit -m "$1"
+git fetch origin
+git merge origin/main
+git push
