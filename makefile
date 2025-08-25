@@ -1,5 +1,5 @@
 # Nome do executável
-TARGET = main
+TARGET = somaVetores
 
 # Compilador CUDA
 NVCC = nvcc

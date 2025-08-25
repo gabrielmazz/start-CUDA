@@ -1,6 +1,5 @@
 #include <cstdio>
 #include <cuda_runtime.h>
-#include <vector>
 
 __global__ void hello(){
     printf("Hello from block %d, thread %d\n", blockIdx.x, threadIdx.x);
